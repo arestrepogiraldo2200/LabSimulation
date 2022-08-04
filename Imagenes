@@ -1,0 +1,8 @@
+
+
+let img;
+function preload() {
+  img1 = loadImage('https://raw.githubusercontent.com/arestrepogiraldo2200/LabSimulation/master/1.png');
+    img2 = loadImage('https://raw.githubusercontent.com/arestrepogiraldo2200/LabSimulation/master/2.png');
+}
+

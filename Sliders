@@ -1,0 +1,38 @@
+let Charge;
+let Mass;
+let B;
+
+function setup() {  
+  
+  createCanvas(400, 400);
+  
+  Charge = createSlider(-100, 100, 0, 1);
+  Charge.position(10, 10);
+  Charge.style('width', '200px');
+  
+  Mass = createSlider(0, 50, 20, 1);
+  Mass.position(10, 60);
+  Mass.style('width', '200px');
+  
+  B = createSlider(-100, 100, 50, 1);
+  B.position(10, 110);
+  B.style('width', '200px');
+
+}
+
+function draw() {
+  
+  clear()
+  
+  let valC = Charge.value();  
+  text("Carga: " + Charge.value(), 10, 30,  70, 80)
+
+  let valM = Mass.value();  
+  text("Masa: " + Mass.value(), 10, 80,  70, 80)
+  
+  let valB = B.value();  
+  text("B: " + B.value(), 10, 130,  70, 80)
+  }
+
+
+
